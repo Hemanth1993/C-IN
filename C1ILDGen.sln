@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1ILDGen", "C1ILDGen\C1ILDGen.csproj", "{C2D221E5-A836-4112-A392-4CF3F6D12F4C}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "C1IDG_Setup", "C1IDG_Setup\C1IDG_Setup.vdproj", "{C3B9C048-DDA5-446C-977F-1D1410EF0C48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CINProc", "CINProc\CINProc.csproj", "{29B4706D-DF11-498D-BBC2-AA4E3CFF6381}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2D221E5-A836-4112-A392-4CF3F6D12F4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2D221E5-A836-4112-A392-4CF3F6D12F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2D221E5-A836-4112-A392-4CF3F6D12F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2D221E5-A836-4112-A392-4CF3F6D12F4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3B9C048-DDA5-446C-977F-1D1410EF0C48}.Debug|Any CPU.ActiveCfg = Debug
+		{C3B9C048-DDA5-446C-977F-1D1410EF0C48}.Release|Any CPU.ActiveCfg = Release
+		{29B4706D-DF11-498D-BBC2-AA4E3CFF6381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29B4706D-DF11-498D-BBC2-AA4E3CFF6381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29B4706D-DF11-498D-BBC2-AA4E3CFF6381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29B4706D-DF11-498D-BBC2-AA4E3CFF6381}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
