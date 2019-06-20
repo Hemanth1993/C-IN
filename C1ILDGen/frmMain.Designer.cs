@@ -34,12 +34,13 @@
             this.mnuMain = new System.Windows.Forms.MenuStrip();
             this.mnuAdministration = new System.Windows.Forms.ToolStripMenuItem();
             this.userManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuProjects = new System.Windows.Forms.ToolStripMenuItem();
+            this.projectNameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.appConfigToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.instFormatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.legendsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vendorListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mappingPIDTagNumberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuProjects = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuProcess = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuProcessPID = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuProcessJB = new System.Windows.Forms.ToolStripMenuItem();
@@ -154,9 +155,39 @@
             // 
             this.userManagementToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.userManagementToolStripMenuItem.Name = "userManagementToolStripMenuItem";
-            this.userManagementToolStripMenuItem.Size = new System.Drawing.Size(268, 26);
+            this.userManagementToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.userManagementToolStripMenuItem.Text = "User Management";
             this.userManagementToolStripMenuItem.Click += new System.EventHandler(this.userManagementToolStripMenuItem_Click);
+            // 
+            // mnuProjects
+            // 
+            this.mnuProjects.AutoToolTip = true;
+            this.mnuProjects.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.projectNameToolStripMenuItem,
+            this.appConfigToolStripMenuItem,
+            this.instFormatToolStripMenuItem,
+            this.legendsToolStripMenuItem,
+            this.vendorListToolStripMenuItem,
+            this.mappingPIDTagNumberToolStripMenuItem});
+            this.mnuProjects.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnuProjects.ForeColor = System.Drawing.Color.White;
+            this.mnuProjects.Image = global::C1ILDGen.Properties.Resources.folder_W_32;
+            this.mnuProjects.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.mnuProjects.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.mnuProjects.Margin = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.mnuProjects.Name = "mnuProjects";
+            this.mnuProjects.Size = new System.Drawing.Size(244, 36);
+            this.mnuProjects.Text = "   Projects";
+            this.mnuProjects.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.mnuProjects.ToolTipText = "Projects";
+            this.mnuProjects.Click += new System.EventHandler(this.mnuProjects_Click);
+            // 
+            // projectNameToolStripMenuItem
+            // 
+            this.projectNameToolStripMenuItem.Name = "projectNameToolStripMenuItem";
+            this.projectNameToolStripMenuItem.Size = new System.Drawing.Size(268, 26);
+            this.projectNameToolStripMenuItem.Text = "Project Name";
+            this.projectNameToolStripMenuItem.Click += new System.EventHandler(this.ProjectNameToolStripMenuItem_Click);
             // 
             // appConfigToolStripMenuItem
             // 
@@ -195,29 +226,6 @@
             this.mappingPIDTagNumberToolStripMenuItem.Text = "Mapping PID Tag Number";
             this.mappingPIDTagNumberToolStripMenuItem.Click += new System.EventHandler(this.mappingPIDTagNumberToolStripMenuItem_Click);
             // 
-            // mnuProjects
-            // 
-            
-            this.mnuProjects.AutoToolTip = true;
-            this.mnuProjects.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.appConfigToolStripMenuItem,
-            this.instFormatToolStripMenuItem,
-            this.legendsToolStripMenuItem,
-            this.vendorListToolStripMenuItem,
-            this.mappingPIDTagNumberToolStripMenuItem});
-            this.mnuProjects.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnuProjects.ForeColor = System.Drawing.Color.White;
-            this.mnuProjects.Image = global::C1ILDGen.Properties.Resources.folder_W_32;
-            this.mnuProjects.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.mnuProjects.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.mnuProjects.Margin = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.mnuProjects.Name = "mnuProjects";
-            this.mnuProjects.Size = new System.Drawing.Size(244, 36);
-            this.mnuProjects.Text = "   Projects";
-            this.mnuProjects.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.mnuProjects.ToolTipText = "Projects";
-            this.mnuProjects.Click += new System.EventHandler(this.mnuProjects_Click);
-            // 
             // mnuProcess
             // 
             this.mnuProcess.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -238,14 +246,14 @@
             // mnuProcessPID
             // 
             this.mnuProcessPID.Name = "mnuProcessPID";
-            this.mnuProcessPID.Size = new System.Drawing.Size(152, 26);
+            this.mnuProcessPID.Size = new System.Drawing.Size(149, 26);
             this.mnuProcessPID.Text = "P&&ID";
             this.mnuProcessPID.Click += new System.EventHandler(this.mnuProcessPID_Click);
             // 
             // mnuProcessJB
             // 
             this.mnuProcessJB.Name = "mnuProcessJB";
-            this.mnuProcessJB.Size = new System.Drawing.Size(152, 26);
+            this.mnuProcessJB.Size = new System.Drawing.Size(149, 26);
             this.mnuProcessJB.Text = "JB Layout";
             this.mnuProcessJB.Click += new System.EventHandler(this.mnuProcessJB_Click);
             // 
@@ -526,5 +534,6 @@
         private System.Windows.Forms.ToolStripMenuItem legendsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vendorListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mappingPIDTagNumberToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem projectNameToolStripMenuItem;
     }
 }

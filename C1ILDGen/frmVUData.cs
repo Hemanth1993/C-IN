@@ -891,7 +891,7 @@ namespace C1ILDGen
 
                     int rowNo = 0;
                     int sCounter = 5;
-                    for (int sNo = 1; sNo <= totSheets + 1; sNo++)
+                    for (int sNo = 1; sNo <= totSheets; sNo++)
                     {
                         int RowMax = rowNo + sCounter;
                         xlWorkSheet = (Microsoft.Office.Interop.Excel.Worksheet)xlWorkBook.Worksheets.get_Item(sNo);

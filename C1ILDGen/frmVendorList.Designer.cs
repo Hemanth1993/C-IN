@@ -117,7 +117,7 @@
             // 
             this.txtFilePath.Location = new System.Drawing.Point(81, 6);
             this.txtFilePath.Name = "txtFilePath";
-            this.txtFilePath.Size = new System.Drawing.Size(321, 21);
+            this.txtFilePath.Size = new System.Drawing.Size(321, 20);
             this.txtFilePath.TabIndex = 7;
             // 
             // lblSelectFile

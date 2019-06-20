@@ -99,12 +99,7 @@ namespace C1ILDGen
 
         private void mnuProjects_Click(object sender, EventArgs e)
         {
-            ShowFormInPanel(new frmProject());
-            mnuAdministration.BackColor = Color.Transparent;
-            mnuProjects.BackColor = Color.Black;
-            mnuProcess.BackColor = Color.Transparent;
-            mnuViewUpdate.BackColor = Color.Transparent;
-            mnuReports.BackColor = Color.Transparent;
+           
         }
 
         private void mnuProcessPID_Click(object sender, EventArgs e)
@@ -321,6 +316,16 @@ namespace C1ILDGen
         private void mnuReports_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ProjectNameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowFormInPanel(new frmProject());
+            mnuAdministration.BackColor = Color.Transparent;
+            mnuProjects.BackColor = Color.Black;
+            mnuProcess.BackColor = Color.Transparent;
+            mnuViewUpdate.BackColor = Color.Transparent;
+            mnuReports.BackColor = Color.Transparent;
         }
     }
 }

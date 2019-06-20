@@ -173,5 +173,9 @@ namespace C1ILDGen
             btnCancel.Visible = false;
         }
 
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
