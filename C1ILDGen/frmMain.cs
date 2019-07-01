@@ -18,6 +18,11 @@ namespace C1ILDGen
             InitializeComponent();
             mnuMain.Renderer = new MyRenderer();
             lblUserName.Text = Globals.UserFirstName + " " + Globals.UserLastName;
+            if (Globals.Role != "Admin")
+            {
+                mnuAdministration.Visible = false;
+                mnuProjects.Visible = false;
+            }
         }
         [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();

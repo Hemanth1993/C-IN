@@ -86,7 +86,7 @@ namespace C1ILDGen
             if (sqlClient == null)
                 return false;
 
-            sqlClient.Query(strSQL, sqlTransanction);
+            sqlClient.Query(strSQL);
             return (sqlClient.ErrorMessage == null);
         }
 
@@ -165,7 +165,7 @@ namespace C1ILDGen
                 int PID = GetProjectID(pName);
                 String Status = "Active";
 
-                strSQL = "INSERT INTO USER_PROJECTS VALUES (" + ID + ",'" + UserId + "','" + PID + "','" + System.DateTime.Now + "','" + Status + "')";
+                strSQL = "INSERT INTO USER_PROJECTS VALUES (" + ID + ",'" + UserId + "','" + PID + "',GETDATE(),'" + Status + "')";
                 executeSQL(sqlClient, strSQL);
             }
         }

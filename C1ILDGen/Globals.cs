@@ -10,6 +10,7 @@ namespace C1ILDGen
     {
         public static string UserFirstName = string.Empty;
         public static string UserLastName = string.Empty;
+        public static string Role = string.Empty;
         public static string UserID = string.Empty;
         public static string ActiveProjectID = string.Empty;
         public static string ActiveProjectName = string.Empty;

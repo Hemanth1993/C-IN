@@ -204,7 +204,7 @@
             this.optInactive.AutoSize = true;
             this.optInactive.Location = new System.Drawing.Point(121, 4);
             this.optInactive.Name = "optInactive";
-            this.optInactive.Size = new System.Drawing.Size(64, 17);
+            this.optInactive.Size = new System.Drawing.Size(63, 17);
             this.optInactive.TabIndex = 1;
             this.optInactive.Text = "Inactive";
             this.optInactive.UseVisualStyleBackColor = true;
@@ -246,7 +246,7 @@
             this.optAdmin.Checked = true;
             this.optAdmin.Location = new System.Drawing.Point(12, 4);
             this.optAdmin.Name = "optAdmin";
-            this.optAdmin.Size = new System.Drawing.Size(89, 17);
+            this.optAdmin.Size = new System.Drawing.Size(85, 17);
             this.optAdmin.TabIndex = 0;
             this.optAdmin.TabStop = true;
             this.optAdmin.Text = "Administrator";
@@ -256,7 +256,7 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(155, 142);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(442, 21);
+            this.txtPassword.Size = new System.Drawing.Size(442, 20);
             this.txtPassword.TabIndex = 4;
             // 
             // lblPWD
@@ -273,7 +273,7 @@
             // 
             this.txtLastName.Location = new System.Drawing.Point(155, 78);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(442, 21);
+            this.txtLastName.Size = new System.Drawing.Size(442, 20);
             this.txtLastName.TabIndex = 2;
             this.txtLastName.Leave += new System.EventHandler(this.txtLastName_Leave);
             // 
@@ -313,14 +313,14 @@
             // 
             this.txtFirstName.Location = new System.Drawing.Point(155, 48);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(442, 21);
+            this.txtFirstName.Size = new System.Drawing.Size(442, 20);
             this.txtFirstName.TabIndex = 1;
             // 
             // txtUserID
             // 
             this.txtUserID.Location = new System.Drawing.Point(155, 110);
             this.txtUserID.Name = "txtUserID";
-            this.txtUserID.Size = new System.Drawing.Size(442, 21);
+            this.txtUserID.Size = new System.Drawing.Size(442, 20);
             this.txtUserID.TabIndex = 3;
             // 
             // lblStatus
@@ -382,6 +382,7 @@
             this.Projects});
             this.lvUser.FullRowSelect = true;
             this.lvUser.GridLines = true;
+            this.lvUser.HideSelection = false;
             this.lvUser.Location = new System.Drawing.Point(12, 76);
             this.lvUser.MultiSelect = false;
             this.lvUser.Name = "lvUser";
@@ -418,7 +419,7 @@
             // 
             this.txtSearch.Location = new System.Drawing.Point(12, 52);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(169, 21);
+            this.txtSearch.Size = new System.Drawing.Size(169, 20);
             this.txtSearch.TabIndex = 3;
             // 
             // btnAddNewUser

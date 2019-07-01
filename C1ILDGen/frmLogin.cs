@@ -49,12 +49,13 @@ namespace C1ILDGen
 
             sqlClient = new WatcherSqlClient(CConf.GetString("DBHost"), CConf.GetString("DBName"), CConf.GetBoolean("DBTrustedConnection"), CConf.GetString("DBLogin"), CConf.GetString("DBPassword"), CConf.GetString("DBConnectionString"));
             sqlClient.OpenConnection();
-            DataSet dataSetUserID = sqlClient.Query("SELECT FirstName,LastName FROM Users where UserName ='" + uName + "' and Password ='" + txtPassword.Text + "'", "DF");
+            DataSet dataSetUserID = sqlClient.Query("SELECT FirstName,LastName,Role FROM Users where UserName ='" + uName + "' and Password ='" + txtPassword.Text + "'", "DF");
             if (dataSetUserID != null && dataSetUserID.Tables.Count > 0 && dataSetUserID.Tables[0].Rows.Count > 0)
             {
                 Globals.UserFirstName = dataSetUserID.Tables[0].Rows[0][0].ToString();
                 Globals.UserLastName = dataSetUserID.Tables[0].Rows[0][1].ToString();
                 Globals.UserID = uName;
+                Globals.Role = dataSetUserID.Tables[0].Rows[0][2].ToString();
                 return true;
             }
             else

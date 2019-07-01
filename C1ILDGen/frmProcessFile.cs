@@ -55,16 +55,17 @@ namespace C1ILDGen
             mainNode.Text = "Projects";
             this.tviewProjects.Nodes.Add(mainNode);
             tviewProjects.SelectedNode = tviewProjects.Nodes[0];
-            TreeNode nod = new TreeNode();
+            
             DataSet dataSetPID = sqlClient.Query("SELECT PROJECT.ProjectID, ProjectName FROM ((SELECT ProjectID FROM USER_PROJECTS where UserID='" + UID + "')) t1_not_in_t2 JOIN PROJECT ON t1_not_in_t2.ProjectID=PROJECT.ProjectID", "TAG");
             if (dataSetPID != null && dataSetPID.Tables.Count > 0 && dataSetPID.Tables[0].Rows.Count > 0)
             {
                 for (int i = 0; i < dataSetPID.Tables[0].Rows.Count; i++)
                 {
+                    TreeNode nod = new TreeNode();
                     nod.Name = dataSetPID.Tables[0].Rows[i][1].ToString();
                     nod.Text = dataSetPID.Tables[0].Rows[i][1].ToString();
                     nod.Tag = dataSetPID.Tables[0].Rows[i][0].ToString();
-                    tviewProjects.SelectedNode.Nodes.Add(nod);
+                    tviewProjects.Nodes[0].Nodes.Add(nod);
                 }
             }
             tviewProjects.SelectedNode.ExpandAll();
@@ -180,9 +181,9 @@ namespace C1ILDGen
                                 sourceAxDb.Open(dir);
                                 mainForm.StatStripLbl1.Text = "File Opened Successfully.";
                                 if (gbReadPID.Text == "Read P&&ID")
-                                    readDWG(sourceAxDb.ModelSpace, txtFileName.Text, 1, 1);
+                                    readDWG(sourceAxDb.ModelSpace, dir, 1, 1);
                                 else if (gbReadPID.Text == "Read JB Schedule")
-                                    readJBSchedule(sourceAxDb.ModelSpace, txtFileName.Text, 1, 1);
+                                    readJBSchedule(sourceAxDb.ModelSpace, dir, 1, 1);
                                 mainForm.StatStripLbl1.Text = "Data Read Successfully.";
                                 sourceAxDb = null;
                                 mainForm.StatStripLbl1.Text = "Checking for next file to process.";

@@ -316,7 +316,7 @@ namespace C1ILDGen
                 SqlCommand sqlCmd = new SqlCommand(strQuery, sqlConnection);
                 sqlCmd.CommandTimeout = nCommandTimeOut;
                 sqlCmd.ExecuteNonQuery();
-                sqlCmd.Dispose();
+               // sqlCmd.Dispose();
             }
             catch (Exception e)
             {

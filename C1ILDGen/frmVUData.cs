@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Diagnostics;
+
 
 namespace C1ILDGen
 {
@@ -918,6 +920,7 @@ namespace C1ILDGen
                     xlWorkSheet = (Microsoft.Office.Interop.Excel.Worksheet)xlWorkBook.Worksheets.get_Item(1);
                     xlWorkBook.SaveAs(destinationPath, Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookNormal, misValue, misValue, misValue, misValue, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, misValue, misValue, misValue, misValue, misValue);
                     xlWorkBook.Close(true, misValue, misValue);
+                    Process.Start(destinationPath);
                     xlApp.Quit();
                     frmMain.StatStripLbl1.Text = "Writing Data to Excel Completed.";
                 }

@@ -150,6 +150,7 @@
             this.mnuAdministration.ToolTipText = "Administration";
             this.mnuAdministration.BackColorChanged += new System.EventHandler(this.mnuAdministration_BackColorChanged);
             this.mnuAdministration.Click += new System.EventHandler(this.mnuAdministration_Click);
+            
             // 
             // userManagementToolStripMenuItem
             // 
